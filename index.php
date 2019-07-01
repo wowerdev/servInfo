@@ -54,6 +54,8 @@ $port = "8085"; // Порт (обычно 8085)
         <?php
         $connectChar = new mysqli($host, $login, $pass, $bd_char);
         $connectAuth = new mysqli($host, $login, $pass, $bd_auth);
+        $connectChar->query("SET NAMES `utf8` COLLATE `utf8_general_ci`");
+        $connectAuth->query("SET NAMES `utf8` COLLATE `utf8_general_ci`");
 
         if ($connectChar->connect_error || $connectChar->connect_error) {
           echo "Ошибка подключения к базе данных";

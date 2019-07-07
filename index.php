@@ -303,7 +303,6 @@ $port = "8085"; // Порт (обычно 8085)
               </table>
             </li>
           </ul>
-          <a href="https://it-portfolio.ru/" style="display: none;">Разработка сайтов</a>
         <?php } ?>
       </section>
     </div>
